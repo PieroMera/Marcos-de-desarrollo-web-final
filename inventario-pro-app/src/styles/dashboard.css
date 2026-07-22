@@ -1,0 +1,67 @@
+/* Estilos Globales */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+    min-height: 100vh;
+    background: #212529;
+    color: white;
+    box-shadow: 4px 0 10px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 767.98px) {
+    .sidebar {
+        min-height: auto;
+        box-shadow: none;
+        width: 100%;
+        padding-bottom: 1rem;
+        background: #2c3034; /* Un tono ligeramente distinto para diferenciar del header */
+    }
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.75);
+    transition: 0.3s;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    margin: 2px 0;
+}
+
+.nav-link:hover {
+    color: white;
+    background: rgba(255,255,255,0.1);
+}
+
+.nav-link.active {
+    color: white;
+    background: #dc3545 !important;
+}
+
+/* Componentes de Dashboard */
+.card-stat {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.card-stat:hover { transform: translateY(-5px); }
+.main-content { padding: 1.5rem; }
+
+/* Ajustes para el botón de menú en móviles */
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Contenedor del gráfico */
+.chart-container {
+    height: 350px;
+    width: 100%;
+}
